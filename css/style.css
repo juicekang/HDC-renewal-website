@@ -14,6 +14,7 @@ header {
     transition: top 0.3s ease-in-out;
     z-index: 99;
 }
+
 header h1.logo { width:250px; float:left;}
 header h1.logo img { width:100%; }
 header nav { float:right; margin-top:10px; text-align: center; }
@@ -100,6 +101,9 @@ header nav .burger {
     transform:translate(-50%, -50%);
     z-index: -1;
 }
+
+#main img { display: none;}
+
 #main .textarea {
     position: absolute;
     left:10%;
@@ -242,7 +246,7 @@ p.date { text-align: right; width:auto; height:auto; }
 }
 
 /* third section */
-#partner { padding-top:150px; width:80%; height:1000px; margin:0 auto; position:relative; overflow: hidden; }
+#partner { padding:150px 0; width:80%; height:1000px; margin:0 auto; position:relative; overflow: hidden; }
 #partner figure { width:30%; height:300px; margin-right:5%; float:left; position: relative; cursor: pointer;}
 #partner figure:last-child { margin-right: 0; background: url("../img/rolling_img2.jpg") right top/cover no-repeat; margin-top:100px;}
 figure.portal { background: url("../img/visual07.jpg") center center/cover no-repeat; margin-top:100px;}
@@ -331,7 +335,7 @@ footer .right .sns a:last-child { margin-right:0; }
     
 
 @media all and (max-width:980px) {
-    #main { height:60%; }
+    #main { height:60%;  }
     #main .textarea h1 { font-size:35px; }
     
     #buisiness figure { width:100%; height:300px; margin-bottom:10%; }
@@ -379,7 +383,10 @@ footer .right .sns a:last-child { margin-right:0; }
 	footer .right button { height:40px; line-height:38px; }
 
 @media all and (max-width:480px) {
-    #main { height:45%; }
+    #main { height:70%; }
+    #main img { display:block; position: absolute; left:-30%; top:-10%; width:200%; }
+    #main video { display:none; }
+    #main .more_btn { width:120px; height:40px; line-height: 36px; }
     #main .textarea h1 { font-size:30px; }
     header h1.logo { width:150px; height:35px; float:left; background:url("../img/logo1.png") center center/ contain no-repeat;}
     header h1.logo img { display: none; }
